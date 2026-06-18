@@ -14,3 +14,8 @@ cargo --version
 cargo new myapp
 cd myapp
 
+-----------------------------------
+
+cargo add axum
+cargo add tokio --features full
+
