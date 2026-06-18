@@ -3,7 +3,7 @@ use axum::{routing::get, Router};
 #[tokio::main]
 async fn main() {
     // ① ルーティングの設定（「/」にアクセスしたら「Hello from WSL!」を返す）
-    let app = Router::new().route("/", get(|| async { "Hello from WSL! 🚀" }));
+    let app = Router::new().route("/", get(root_handler));
 
     // ② サーバーを起動するアドレス（ポート3000番）
     let listener = tokio::net::TcpListener::bind("127.0.0.1:3000").await.unwrap();
@@ -11,4 +11,8 @@ async fn main() {
 
     // ③ サーバーをスタート
     axum::serve(listener, app).await.unwrap();
+}
+
+async fn root_handler() -> &'static str {
+    "Hello from WSL! 🚀"
 }
