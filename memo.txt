@@ -9,7 +9,15 @@ rust: 3000
 
 -----------------------------------
 
+サーバー起動
+
+cargo-watch -x "run --bin server"
+
 cargo run --bin server
+
+-----------------------------------
+
+CLI起動
 
 cargo run --bin cli
 
@@ -17,4 +25,12 @@ cargo run --bin cli
 
 
 http://localhost:3000
+
+
+-----------------------------------
+
+セットアップ
+
+
+cargo build
 
