@@ -34,3 +34,19 @@ http://localhost:3000
 
 cargo build
 
+-----------------------------------
+
+エラーチェック
+
+cargo check
+
+-----------------------------------
+
+ビルド
+
+cargo build --release
+
+./target/release/server
+
+./target/release/cli
+
