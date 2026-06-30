@@ -53,7 +53,7 @@ cargo build --release
 
 -----------------------------------
 
-wasm
+Wasm
 
 cd ~/workspace/github/rust-test/wasm
 
