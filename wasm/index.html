@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+  <script type="module">
+    import init, { add, greet } from "./pkg/wasm.js";
+
+    async function run() {
+      await init(); // Wasmを初期化
+      console.log(add(3, 4));          // => 7
+      console.log(greet("Test")); // => "Hello, Test! from Rust"
+    }
+    run();
+  </script>
+</body>
+</html>

@@ -50,3 +50,20 @@ cargo build --release
 
 ./target/release/cli
 
+
+-----------------------------------
+
+wasm
+
+cd ~/workspace/github/rust-test/wasm
+
+ビルド
+
+wasm-pack build --target web
+
+動作確認
+
+python3 -m http.server 8000
+
+http://localhost:8000/
+
