@@ -21,3 +21,8 @@ cargo add tokio --features full
 
 cargo install cargo-watch
 
+-----------------------------------
+
+
+cargo new wasm --lib
+
