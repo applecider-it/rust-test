@@ -29,3 +29,6 @@ cargo new wasm --lib
 cargo install wasm-pack
 
 wasm-pack build --target web
+
+cargo install cargo-watch
+cargo watch -s "wasm-pack build --target web"

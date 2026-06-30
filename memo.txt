@@ -59,6 +59,8 @@ cd ~/workspace/github/rust-test/wasm
 
 ビルド
 
+cargo watch -s "wasm-pack build --target web"
+
 wasm-pack build --target web
 
 動作確認
@@ -66,4 +68,6 @@ wasm-pack build --target web
 python3 -m http.server 8000
 
 http://localhost:8000/
+
+キャッシュが残るので、更新後は、スーパーリロードが必要
 
